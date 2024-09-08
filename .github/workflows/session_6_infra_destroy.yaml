@@ -37,8 +37,8 @@ jobs:
 
     - name: Terraform init
       run: terraform init
-      working-directory: ./session_6
+      working-directory: ./session_5
 
     - name: Terraform destroy dev
       run: terraform destroy -var-file dev.tfvars --auto-approve
-      working-directory: ./session_6
+      working-directory: ./session_5
