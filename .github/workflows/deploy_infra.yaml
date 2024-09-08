@@ -27,7 +27,7 @@ jobs:
 
       - name: Run terraform fmt
         run: terraform fmt -check=true -recursive
-        working-directory: ./session_6
+        working-directory: ./session_5
 
   tflint:
     runs-on: ubuntu-latest
@@ -43,7 +43,7 @@ jobs:
 
       - name: Run tflint
         run: tflint --recursive
-        working-directory: ./session_6
+        working-directory: ./session_5
   # Can add extra jobs/steps to run any pre deploy tasks
 
   deploy:
@@ -76,14 +76,14 @@ jobs:
 
       - name: Terraform init
         run: terraform init
-        working-directory: ./session_6
+        working-directory: ./session_5
 
       - name: Terraform plan dev
         run: terraform plan -var-file dev.tfvars -out=dev-plan.tfplan
-        working-directory: ./session_6
+        working-directory: ./session_5
 
       - name: Terraform apply dev
         run: terraform apply --auto-approve dev-plan.tfplan
-        working-directory: ./session_6
+        working-directory: ./session_5
 
        
