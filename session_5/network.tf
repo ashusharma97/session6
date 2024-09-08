@@ -5,7 +5,7 @@ module "vpc" {
   name = format("%s-vpc", var.prefix)
   cidr = var.vpc_cidr
 
-  azs             = ["ap-southeast-2a", "ap-southeast-2b"]
+  azs             = ["ap-south-1a", "ap-south-1b" ,"ap-south-1c"]
   public_subnets  = [cidrsubnet(var.vpc_cidr, 3, 1), cidrsubnet(var.vpc_cidr, 3, 2)]
   private_subnets = [cidrsubnet(var.vpc_cidr, 3, 3), cidrsubnet(var.vpc_cidr, 3, 4)]
   intra_subnets   = [cidrsubnet(var.vpc_cidr, 3, 5), cidrsubnet(var.vpc_cidr, 3, 6)]
