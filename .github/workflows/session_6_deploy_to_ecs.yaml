@@ -3,7 +3,7 @@ name: Session 6 Deploy to ECS
 on: workflow_dispatch
 
 env:
-  AWS_REGION: ap-southeast-1
+  AWS_REGION: ap-south-1
   ECR_REPOSITORY: ashu-iac-lab-api
   ECS_SERVICE: ashu-iac-lab-ecs-service
   ECS_CLUSTER: ashu-iac-lab-ecs-cluster
