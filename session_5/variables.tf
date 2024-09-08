@@ -13,20 +13,20 @@ variable "vpc_cidr" {
   description = "VPC CIDR Block"
 }
 
-variable "number_of_public_subnets" {
-  description = "Number of public subnets in the VPC"
-  type        = number
-}
+#variable "number_of_public_subnets" {
+  #description = "Number of public subnets in the VPC"
+  #type        = number
+#}
 
-variable "number_of_private_subnets" {
-  description = "Number of private subnets in the VPC"
-  type        = number
-}
+#variable "number_of_private_subnets" {
+ # description = "Number of private subnets in the VPC"
+ # type        = number
+#}
 
-variable "number_of_secure_subnets" {
-  description = "Number of secure subnets in the VPC"
-  type        = number
-}
+#variable "number_of_secure_subnets" {
+#  description = "Number of secure subnets in the VPC"
+ # type        = number
+#}
 
 variable "db_username" {
   type        = string
